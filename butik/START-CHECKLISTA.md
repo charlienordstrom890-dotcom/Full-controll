@@ -25,4 +25,5 @@ Fyll i alla [HAKPARENTESER] (företagsnamn, org.nr, adress, e-post, fraktpris), 
 - [ ] Slå på Shopifys cookie-banner (Inställningar → Kundsekretess)
 
 ## 5. Sen
+- [ ] Följ `butik/konton/KONTOPAKET.md` (mejl, Shopify, Instagram, TikTok, Pinterest)
 - [ ] Be Claude: **"/dropship-team hitta-produkter"**

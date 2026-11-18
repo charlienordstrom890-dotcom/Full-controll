@@ -1,0 +1,61 @@
+# Källor för tredjepartsskills
+
+Alla skills nedan är MIT-licensierade; varje mapp innehåller sin LICENSE. Hämtade 2026-11-18.
+
+| Skill | Källa |
+|---|---|
+| ad-creative | https://github.com/coreyhaines31/marketingskills |
+| ads | https://github.com/coreyhaines31/marketingskills |
+| ai-seo | https://github.com/coreyhaines31/marketingskills |
+| analytics | https://github.com/coreyhaines31/marketingskills |
+| brand-dna | https://github.com/thatrebeccarae/claude-marketing |
+| competitor-ads-analyst | https://github.com/thatrebeccarae/claude-marketing |
+| competitor-price-analysis | https://github.com/nexscope-ai/ecommerce-skills |
+| copy-editing | https://github.com/coreyhaines31/marketingskills |
+| copywriting | https://github.com/coreyhaines31/marketingskills |
+| cro | https://github.com/coreyhaines31/marketingskills |
+| customer-feedback-analysis | https://github.com/nexscope-ai/ecommerce-skills |
+| dropshipping-product-research | https://github.com/nexscope-ai/ecommerce-skills |
+| ecommerce-competitor-analysis | https://github.com/nexscope-ai/ecommerce-skills |
+| ecommerce-customer-retention | https://github.com/nexscope-ai/ecommerce-skills |
+| ecommerce-keyword-research | https://github.com/nexscope-ai/ecommerce-skills |
+| ecommerce-returns-management | https://github.com/nexscope-ai/ecommerce-skills |
+| ecommerce-social-media-marketing | https://github.com/nexscope-ai/ecommerce-skills |
+| ecommerce-video-marketing | https://github.com/nexscope-ai/ecommerce-skills |
+| email-marketing-bible | https://github.com/CosmoBlk/email-marketing-bible |
+| emails | https://github.com/coreyhaines31/marketingskills |
+| facebook-ads | https://github.com/thatrebeccarae/claude-marketing |
+| google-ads | https://github.com/thatrebeccarae/claude-marketing |
+| google-shopping-optimization | https://github.com/nexscope-ai/ecommerce-skills |
+| influencer-marketing | https://github.com/coreyhaines31/marketingskills |
+| influencer-outreach | https://github.com/nexscope-ai/ecommerce-skills |
+| klaviyo-analyst | https://github.com/thatrebeccarae/claude-marketing |
+| landing-page-optimizer | https://github.com/thatrebeccarae/claude-marketing |
+| launch | https://github.com/coreyhaines31/marketingskills |
+| market-gap-analysis | https://github.com/nexscope-ai/ecommerce-skills |
+| marketing-ideas | https://github.com/coreyhaines31/marketingskills |
+| marketing-psychology | https://github.com/coreyhaines31/marketingskills |
+| offers | https://github.com/coreyhaines31/marketingskills |
+| popups | https://github.com/coreyhaines31/marketingskills |
+| pricing | https://github.com/coreyhaines31/marketingskills |
+| product-description-generator | https://github.com/nexscope-ai/ecommerce-skills |
+| product-launch-strategy | https://github.com/nexscope-ai/ecommerce-skills |
+| product-marketing | https://github.com/coreyhaines31/marketingskills |
+| product-page-seo | https://github.com/nexscope-ai/ecommerce-skills |
+| product-title-optimization | https://github.com/nexscope-ai/ecommerce-skills |
+| profit-margin-calculator-shopify | https://github.com/nexscope-ai/ecommerce-skills |
+| programmatic-seo | https://github.com/coreyhaines31/marketingskills |
+| shopify-cart-abandonment | https://github.com/nexscope-ai/ecommerce-skills |
+| shopify-conversion-optimization | https://github.com/nexscope-ai/ecommerce-skills |
+| shopify-dropshipping | https://github.com/nexscope-ai/ecommerce-skills |
+| shopify-email-flows | https://github.com/nexscope-ai/ecommerce-skills |
+| shopify-facebook-instagram-shop | https://github.com/nexscope-ai/ecommerce-skills |
+| shopify-seo | https://github.com/nexscope-ai/ecommerce-skills |
+| shopify-store-setup | https://github.com/nexscope-ai/ecommerce-skills |
+| shopify-upsell-cross-sell | https://github.com/nexscope-ai/ecommerce-skills |
+| shopify | https://github.com/thatrebeccarae/claude-marketing |
+| social | https://github.com/coreyhaines31/marketingskills |
+| tiktok-ads | https://github.com/thatrebeccarae/claude-marketing |
+| tiktok-influencer-marketing | https://github.com/nexscope-ai/ecommerce-skills |
+| tiktok-shop-trending-products | https://github.com/nexscope-ai/ecommerce-skills |
+| wasted-spend-finder | https://github.com/thatrebeccarae/claude-marketing |

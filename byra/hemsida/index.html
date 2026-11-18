@@ -257,6 +257,46 @@ summary::after { content: "+"; font: 600 1.3rem var(--mono); color: var(--accent
 details[open] summary::after { content: "–"; }
 details p { margin-top: 10px; color: var(--muted); max-width: 60ch; }
 
+/* Ur riktiga granskningar */
+.finds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+@media (max-width: 920px) { .finds { grid-template-columns: 1fr; } }
+.find { background: var(--ticket); border: 1px solid var(--line); border-radius: 4px; padding: 22px 22px 24px; display: grid; gap: 12px; align-content: start; position: relative; box-shadow: 0 1px 0 var(--line), 0 12px 24px -18px rgba(23,24,28,.35); min-width: 0; }
+.find:nth-child(1) { transform: rotate(-0.8deg); }
+.find:nth-child(3) { transform: rotate(0.7deg); }
+.find::before { content: ""; position: absolute; top: -9px; left: 50%; width: 64px; height: 18px; margin-left: -32px; background: var(--mustard); opacity: .75; border-radius: 2px; }
+.find .who { font: 600 0.75rem var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.find h3 { font-size: 1.1rem; }
+.find .fixline { border-top: 1px dashed var(--line); padding-top: 10px; font-size: 0.92rem; display: grid; grid-template-columns: auto 1fr; gap: 8px; }
+.find .fixline b { color: var(--ok); font: 600 0.75rem var(--mono); text-transform: uppercase; padding-top: 3px; }
+.find .t { justify-self: start; font: 600 0.72rem var(--mono); background: var(--mustard); color: #17181C; padding: 3px 9px; border-radius: 999px; }
+@media (prefers-reduced-motion: reduce) { .find { transform: none !important; } }
+
+/* Exempelinlägg */
+.posts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+@media (max-width: 920px) { .posts { grid-template-columns: 1fr; max-width: 420px; } }
+.ig { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; display: grid; min-width: 0; }
+.ig-head { display: flex; align-items: center; gap: 10px; padding: 12px 14px; font-size: 0.85rem; font-weight: 600; }
+.ig-av { width: 28px; height: 28px; border-radius: 50%; background: conic-gradient(var(--mustard), var(--accent), var(--mustard)); padding: 2px; }
+.ig-av i { display: block; width: 100%; height: 100%; border-radius: 50%; background: var(--surface); border: 2px solid var(--surface); }
+.ig-img { aspect-ratio: 1; max-width: 100%; position: relative; display: grid; place-items: end start; padding: 16px; }
+.ig-img span { background: rgba(23,24,28,.78); color: #fff; font: 700 1.05rem var(--display); padding: 6px 10px; border-radius: 6px; max-width: 85%; }
+.img-semla { background:
+  radial-gradient(circle at 44% 27%, #FFFFFF 0 2%, transparent 2.5%), radial-gradient(circle at 55% 25%, #FFFFFF 0 1.6%, transparent 2%), radial-gradient(circle at 50% 31%, #FFFFFF 0 1.8%, transparent 2.3%),
+  radial-gradient(ellipse 22% 11% at 50% 29%, #D49A5C 0 92%, transparent 100%),
+  radial-gradient(ellipse 27% 10% at 50% 40%, #FFFDF6 0 92%, transparent 100%),
+  radial-gradient(ellipse 30% 17% at 50% 52%, #C07A3C 0 90%, transparent 100%),
+  radial-gradient(ellipse 34% 6% at 50% 64%, rgba(0,0,0,.18) 0 80%, transparent 100%),
+  linear-gradient(160deg, #F3E3C8, #D9BE94); }
+.img-soppa { background: radial-gradient(circle at 50% 48%, #E07A2F 0 24%, #F4EFE6 25% 31%, transparent 32%), radial-gradient(circle at 78% 30%, #C9A06A 0 9%, transparent 10%), radial-gradient(circle at 22% 70%, #B8834C 0 10%, transparent 11%), linear-gradient(140deg, #3B4A3F, #263129); }
+.img-bulle { background: radial-gradient(ellipse 30% 7% at 50% 66%, rgba(0,0,0,.25) 0 80%, transparent 100%), linear-gradient(160deg, #6E8FA3, #3F5E70); }
+.img-bulle::after { content: ""; position: absolute; left: 30%; top: 20%; width: 40%; aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(circle at 46% 44%, #FFF6DD 0 3%, transparent 4%), radial-gradient(circle at 58% 36%, #FFF6DD 0 2.5%, transparent 3.5%), radial-gradient(circle at 38% 60%, #FFF6DD 0 2.5%, transparent 3.5%),
+    conic-gradient(from 20deg, #B06A30, #D9A15A, #A35E28, #E0AE6A, #B06A30, #D49A55, #A35E28);
+  box-shadow: inset 0 0 0 6px #C98443, inset 0 -10px 18px rgba(0,0,0,.25); }
+.ig-body { padding: 12px 14px 16px; display: grid; gap: 6px; font-size: 0.88rem; }
+.ig-body .likes { font-weight: 600; }
+.ig-body .tags { color: var(--muted); font-size: 0.82rem; }
+
 footer.site { border-top: 1px solid var(--line); padding-block: 36px; color: var(--muted); font-size: 0.9rem; }
 footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
 @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
@@ -340,6 +380,40 @@ footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-betwe
     </div>
   </section>
 
+  <!-- Ur riktiga granskningar -->
+  <section class="block" aria-labelledby="fynd-h" style="padding-bottom:24px">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Ur riktiga granskningar</p>
+        <h2 id="fynd-h">Det här hittade vi hos tre kaféer den här veckan.</h2>
+        <p class="lead">Riktiga fynd från gratisgranskningar vi har gjort, utan namn. Ingen av dem krävde en byrå för att rätta till. Men någon måste upptäcka dem.</p>
+      </div>
+      <div class="finds">
+        <article class="find">
+          <span class="who">Bageri · Stockholms skärgård</span>
+          <h3>Öppettiderna skilde sig mellan hemsidan och andra sajter.</h3>
+          <p class="note">Och inte ett ord om lussebullar, fast lucia var tre veckor bort och hemsidan redan hade förbeställning.</p>
+          <div class="fixline"><b>Fix</b><span>Samma tider överallt och ett julblock med sista beställningsdag.</span></div>
+          <span class="t">Gratis · 30 min</span>
+        </article>
+        <article class="find">
+          <span class="who">Trädgårdskafé · Stockholms skärgård</span>
+          <h3>Hundratals nöjda gäster, men ingen egen hemsida.</h3>
+          <p class="note">Gästerna skrev om hembakat och vegansk fika. Den som googlade hittade bara andras sajter med gamla öppettider.</p>
+          <div class="fixline"><b>Fix</b><span>Menyn och vintertiderna i Google-profilen, och länk i Instagram-bion.</span></div>
+          <span class="t">Gratis · 25 min</span>
+        </article>
+        <article class="find">
+          <span class="who">Kafé och butik · Skåne</span>
+          <h3>E-postlänken på hemsidan hade ett komma i stället för en punkt.</h3>
+          <p class="note">Alla som försökte mejla om catering kan ha fått sitt mejl i retur. Ingen hade märkt det.</p>
+          <div class="fixline"><b>Fix</b><span>Rätta adressen och ge cateringen en egen sida.</span></div>
+          <span class="t">Gratis · 10 min</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- Problem -->
   <section class="block" aria-labelledby="problem-h">
     <div class="wrap">
@@ -368,6 +442,34 @@ footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-betwe
         <li><h3>Vi gör månaden</h3><p>Inlägg, Google-uppdateringar, svar på recensioner, reels-manus och nyhetsbrev, i er ton och efter er säsong.</p></li>
         <li><h3>Ni godkänner</h3><p>Allt kommer i en samlad leverans. Ni säger ja, ändrar eller stryker. Varje månad får ni en kort rapport.</p></li>
       </ol>
+    </div>
+  </section>
+
+  <!-- Exempelinlägg -->
+  <section class="block" aria-labelledby="inlagg-h" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Så kan det se ut</p>
+        <h2 id="inlagg-h">Inlägg som får folk att gå dit samma dag.</h2>
+        <p class="lead">Ni tar bilden med mobilen. Vi skriver texten, väljer tiden och ser till att den når rätt människor i närheten.</p>
+      </div>
+      <div class="posts">
+        <article class="ig" aria-label="Exempelinlägg om semlor">
+          <div class="ig-head"><span class="ig-av"><i></i></span>kafe.exempel</div>
+          <div class="ig-img img-semla" role="img" aria-label="Illustration av en semla"><span>Förbeställ semlor till fettisdagen</span></div>
+          <div class="ig-body"><span class="likes">Exempel</span><span><b>kafe.exempel</b> Fettisdag 9 februari! Beställ senast söndag så står era semlor klara 07:30. Länk i bio.</span><span class="tags">#semla #fettisdagen #fika</span></div>
+        </article>
+        <article class="ig" aria-label="Exempelinlägg om veckans soppa">
+          <div class="ig-head"><span class="ig-av"><i></i></span>kafe.exempel</div>
+          <div class="ig-img img-soppa" role="img" aria-label="Illustration av en tallrik soppa"><span>Veckans soppa · 115 kr</span></div>
+          <div class="ig-body"><span class="likes">Exempel</span><span><b>kafe.exempel</b> Rostad pumpa med ingefära och nybakat surdegsbröd. Fri påfyllning, för det är januari.</span><span class="tags">#lunch #soppa</span></div>
+        </article>
+        <article class="ig" aria-label="Exempelinlägg om kanelbullar">
+          <div class="ig-head"><span class="ig-av"><i></i></span>kafe.exempel</div>
+          <div class="ig-img img-bulle" role="img" aria-label="Illustration av en kanelbulle"><span>06:10. Första plåten ut.</span></div>
+          <div class="ig-body"><span class="likes">Exempel</span><span><b>kafe.exempel</b> De första bullarna går alltid till dem som väntar utanför. Var där 07:00 i morgon?</span><span class="tags">#kanelbulle #bageri</span></div>
+        </article>
+      </div>
     </div>
   </section>
 

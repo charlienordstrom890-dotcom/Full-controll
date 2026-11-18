@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<title>Granskning – Boulangerie Vaxholm</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+:root { --ink:#17181C; --muted:#5E5F66; --line:#E4E1D8; --paper:#FFFFFF; --soft:#FBFAF6; --accent:#C8322B; --mustard:#F2B33D; --ticket:#FFFDF4;
+  --display:"Bricolage Grotesque","Arial Black",sans-serif; --body:"Inter",Arial,sans-serif; --mono:"JetBrains Mono",Menlo,monospace; }
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+body { margin:0; font-family:var(--body); color:var(--ink); font-size:10pt; line-height:1.48; background:var(--paper); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+.page { width:210mm; height:297mm; padding:15mm 17mm 12mm; position:relative; page-break-after:always; overflow:hidden; display:flex; flex-direction:column; gap:5mm; }
+.page:last-child { page-break-after:auto; }
+h1,h2,h3 { font-family:var(--display); margin:0; line-height:1.08; letter-spacing:-0.01em; }
+h1 { font-size:34pt; font-weight:800; }
+h2 { font-size:17pt; font-weight:800; }
+h3 { font-size:12pt; font-weight:600; }
+p { margin:0; }
+.eyebrow { font-family:var(--mono); font-size:8pt; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); font-weight:600; }
+.muted { color:var(--muted); }
+.brand { display:flex; align-items:center; gap:8px; font-family:var(--display); font-weight:800; font-size:13pt; }
+.dots { display:inline-flex; gap:4px; } .dots i { width:9px; height:9px; border-radius:50%; background:var(--accent); display:block; }
+.foot { margin-top:auto; display:flex; justify-content:space-between; font-family:var(--mono); font-size:7.5pt; color:var(--muted); border-top:1px solid var(--line); padding-top:3mm; }
+
+/* Omslag */
+.cover { background:var(--ink); color:#F6F4EE; }
+.cover .muted { color:#B3B1AB; }
+.cover .eyebrow { color:var(--mustard); }
+.cover .foot { border-color:#33343A; color:#B3B1AB; }
+.cover-main { margin-top:28mm; display:grid; gap:7mm; }
+.cover h1 { font-size:40pt; max-width:15ch; }
+.cover .lead { font-size:13pt; max-width:34em; color:#DAD8D2; }
+.facts { display:grid; grid-template-columns:repeat(3,1fr); gap:5mm; margin-top:14mm; }
+.fact { border-top:2px solid var(--mustard); padding-top:3mm; }
+.fact b { display:block; font-family:var(--display); font-size:15pt; color:#F6F4EE; }
+.fact span { font-size:9pt; color:#B3B1AB; }
+.tables { display:grid; grid-template-columns:repeat(12,1fr); gap:3mm; margin-top:auto; margin-bottom:8mm; }
+.tables i { aspect-ratio:1; border-radius:50%; background:var(--accent); display:block; }
+.tables i.e { background:#2E2F35; }
+
+/* Innehåll */
+.strengths { display:grid; grid-template-columns:1fr 1fr; gap:4mm 8mm; }
+.strength { display:grid; grid-template-columns:7mm 1fr; }
+.strength::before { content:"✓"; color:var(--accent); font-weight:700; }
+.fixes { display:grid; gap:0; }
+.fix { display:grid; grid-template-columns:12mm 1fr auto; gap:4mm; align-items:start; padding:3mm 0; border-top:1px solid var(--line); }
+.fix .n { font-family:var(--display); font-size:22pt; font-weight:800; color:var(--accent); line-height:1; }
+.fix p { color:var(--muted); margin-top:1mm; font-size:9.2pt; }
+.tag { font-family:var(--mono); font-size:7.5pt; font-weight:600; padding:1.2mm 2.6mm; border-radius:99px; background:var(--soft); border:1px solid var(--line); white-space:nowrap; }
+.tag.free { background:var(--mustard); border-color:var(--mustard); }
+.note { background:var(--soft); border:1px solid var(--line); border-radius:3mm; padding:4mm 5mm; font-size:9pt; color:var(--muted); }
+
+/* Tidslinje */
+.timeline { display:grid; grid-template-columns:repeat(4,1fr); gap:4mm; }
+.tl { border:1px solid var(--line); border-radius:3mm; padding:4mm; background:var(--ticket); display:grid; gap:1.5mm; align-content:start; }
+.tl .d { font-family:var(--mono); font-size:8pt; font-weight:600; color:var(--accent); }
+.tl p { font-size:9pt; color:var(--muted); }
+
+/* Paket */
+.help { display:grid; grid-template-columns:1fr 1fr; gap:3.5mm 8mm; }
+.help div { display:grid; gap:1mm; }
+.help p { font-size:9pt; color:var(--muted); }
+.ticket { background:var(--ticket); border:2px solid var(--accent); border-radius:3mm; padding:4mm 5mm; display:grid; grid-template-columns:1.1fr 1fr; gap:6mm; font-family:var(--mono); font-size:9pt; }
+.ticket h3 { font-family:var(--display); font-size:16pt; }
+.price { font-family:var(--display); font-size:22pt; font-weight:800; }
+.price s { font-size:12pt; color:var(--muted); font-weight:600; margin-left:2mm; }
+.ticket ul { margin:0; padding:0; list-style:none; display:grid; gap:1.6mm; }
+.ticket li { display:grid; grid-template-columns:6mm 1fr; }
+.ticket li::before { content:"1×"; color:var(--accent); font-weight:600; }
+.steps { display:grid; grid-template-columns:repeat(3,1fr); gap:5mm; }
+.steps div { border-top:2px solid var(--ink); padding-top:3mm; display:grid; gap:1mm; }
+.steps p { font-size:9.3pt; color:var(--muted); }
+.contact { background:var(--ink); color:#F6F4EE; border-radius:3mm; padding:4.5mm 6mm; display:flex; justify-content:space-between; align-items:center; gap:6mm; }
+.contact b { font-family:var(--display); font-size:15pt; display:block; }
+.contact span { color:#B3B1AB; font-size:9.5pt; }
+.contact .mail { font-family:var(--mono); font-size:11pt; color:var(--mustard); }
+</style>
+</head>
+<body>
+
+<!-- 1. Omslag -->
+<section class="page cover">
+  <div class="brand"><span class="dots"><i></i><i></i><i></i></span>Fullt Hus</div>
+  <div class="cover-main">
+    <p class="eyebrow">Gratis granskning · 18 november 2026</p>
+    <h1>Fler gäster till Boulangerie i vinter.</h1>
+    <p class="lead">En kort genomgång av hur Boulangerie syns på nätet i dag, fem saker ni kan fixa själva och en plan för jul, semlor och påsk.</p>
+  </div>
+  <div class="facts">
+    <div class="fact"><b>5</b><span>konkreta förbättringar</span></div>
+    <div class="fact"><b>4 av 5</b><span>gratis och klara på under 30 minuter</span></div>
+    <div class="fact"><b>3</b><span>säsongstoppar fram till påsk</span></div>
+  </div>
+  <div class="tables" aria-hidden="true">
+    <i></i><i></i><i></i><i class="e"></i><i></i><i></i><i></i><i></i><i class="e"></i><i></i><i></i><i></i>
+  </div>
+  <div class="foot"><span>Boulangerie Bageri &amp; Café · Söderhamnen 6, Vaxholm</span><span>fullthus.se</span></div>
+</section>
+
+<!-- 2. Styrkor + förbättringar -->
+<section class="page">
+  <div class="brand"><span class="dots"><i></i><i></i><i></i></span>Fullt Hus</div>
+  <div style="display:grid;gap:2.5mm">
+    <p class="eyebrow">Det här fungerar redan</p>
+    <h2>Ni har det svåraste på plats.</h2>
+  </div>
+  <div class="strengths">
+    <div class="strength"><span><b>Läget vid hamnen</b> och ett bageri som funnits sedan 2007.</span></div>
+    <div class="strength"><span><b>Omtyckta bakverk.</b> Kardemummabullen och bakelserna nämns ofta i recensioner på nätet.</span></div>
+    <div class="strength"><span><b>Förbeställning finns redan</b> på er hemsida, bland annat för frukostfrallor och limpor.</span></div>
+    <div class="strength"><span><b>Ni syns i guider</b> som Time Out och Lonely Planet, och många gäster har lämnat omdömen.</span></div>
+  </div>
+
+  <div style="display:grid;gap:2.5mm;margin-top:1mm">
+    <p class="eyebrow">Fem saker ni kan fixa</p>
+    <h2>Sorterade efter vad som ger mest för minst jobb.</h2>
+  </div>
+  <div class="fixes">
+    <div class="fix"><span class="n">1</span><div><h3>Förbeställning av lussebullar och julbröd</h3><p>Lucia är den 13 december. Lägg ett kort julblock på startsidan och ett inlägg i Google-profilen: vad som finns, pris, sista beställningsdag och när det hämtas. Beställningar kan tas emot på mejl eller telefon.</p></div><span class="tag free">Gratis · 20 min</span></div>
+    <div class="fix"><span class="n">2</span><div><h3>Samma öppettider överallt, även för jul och nyår</h3><p>Öppettiderna ser olika ut på olika sidor på nätet. Kontrollera Google-profilen, hemsidan och Tripadvisor och lägg in särskilda tider för helgerna. Fel tider är en vanlig orsak till besvikna gäster.</p></div><span class="tag free">Gratis · 10 min</span></div>
+    <div class="fix"><span class="n">3</span><div><h3>Svara på recensionerna, även de kritiska</h3><p>Kort och vänligt. Den som klagar på trängsel kan få tips om lugnare tider på vardagar. Nya gäster läser svaren lika noga som betygen.</p></div><span class="tag free">Gratis · 20 min</span></div>
+    <div class="fix"><span class="n">4</span><div><h3>Fem nya egna bilder i Google-profilen</h3><p>Nybakat bröd, disken, utsikten över hamnen, lokalen och gärna lussebullarna. Riktiga bilder från er säljer bättre än bilder gästerna tagit i dåligt ljus.</p></div><span class="tag free">Gratis · 15 min</span></div>
+    <div class="fix"><span class="n">5</span><div><h3>Instagram och Facebook som följer säsongen</h3><p>Länka era sociala konton från hemsidan, och visa bröd, bakverk och hamnen regelbundet. Med en enkel plan för jul, semlor och påsk kommer förbeställningarna in innan topparna.</p></div><span class="tag">Löpande · det kan vi göra</span></div>
+  </div>
+  <p class="note">Granskningen bygger på offentlig information på nätet den 18 november 2026. Vi har inte haft tillgång till er Google-profil eller era konton, så vissa detaljer kan ha ändrats.</p>
+  <div class="foot"><span>Granskning · Boulangerie Vaxholm</span><span>2 / 3</span></div>
+</section>
+
+<!-- 3. Säsong + Fullt Hus -->
+<section class="page">
+  <div class="brand"><span class="dots"><i></i><i></i><i></i></span>Fullt Hus</div>
+  <div style="display:grid;gap:2.5mm">
+    <p class="eyebrow">Säsongen framåt</p>
+    <h2>Fyra tillfällen att fylla disken.</h2>
+  </div>
+  <div class="timeline">
+    <div class="tl"><span class="d">NU – 13 DEC</span><h3>Lucia</h3><p>Förbeställ lussebullar och lussekatter. Inlägg varje vecka fram till lucia.</p></div>
+    <div class="tl"><span class="d">DEC</span><h3>Jul</h3><p>Julbröd, pepparkakor och presentkort. Tydliga öppettider för helgerna.</p></div>
+    <div class="tl"><span class="d">JAN – 9 FEB</span><h3>Fettisdagen</h3><p>Semlor från januari. Förbeställ för kontor och sällskap i god tid.</p></div>
+    <div class="tl"><span class="d">MARS – 28 MARS</span><h3>Påsk</h3><p>Påskbröd och fika. Sedan börjar båtsäsongen och hamnfikat.</p></div>
+  </div>
+
+  <div style="display:grid;gap:2.5mm;margin-top:1mm">
+    <p class="eyebrow">Så kan Fullt Hus hjälpa er</p>
+    <h2>Ni bakar. Vi ser till att folk vet om det.</h2>
+  </div>
+  <div class="help">
+    <div><h3>Google-profilen varje vecka</h3><p>Inlägg om veckans bröd och säsongens bakverk, nya bilder och rätt öppettider. Vi svarar på alla recensioner i er ton.</p></div>
+    <div><h3>Instagram och Facebook</h3><p>Färdiga inlägg och korta videor som personalen kan filma med mobilen på tio minuter. Vi skriver manus och texter.</p></div>
+    <div><h3>Förbeställningar inför topparna</h3><p>Kampanjer för lucia, semlor och påsk som startar i god tid, med nyhetsbrev till era stamgäster.</p></div>
+    <div><h3>Ni godkänner allt</h3><p>Ingenting publiceras utan ert ja. Ni får en kort rapport varje månad. Vi behöver aldrig era lösenord.</p></div>
+  </div>
+
+  <div class="ticket">
+    <div style="display:grid;gap:2mm;align-content:start">
+      <span class="eyebrow">Förslag för Boulangerie</span>
+      <h3>Paket Växa</h3>
+      <p class="price">1 498 kr<s>2 995 kr</s></p>
+      <span class="muted">per månad exkl. moms, de första 3 månaderna. Ingen bindningstid.</span>
+    </div>
+    <ul>
+      <li>Google-profil: inlägg varje vecka, bilder och svar på recensioner</li>
+      <li>12 inlägg på Instagram och Facebook per månad</li>
+      <li>4 manus för korta videor</li>
+      <li>Nyhetsbrev en gång i månaden</li>
+      <li>Säsongskampanj: lucia, semlor eller påsk</li>
+      <li>Månadsrapport</li>
+    </ul>
+  </div>
+
+  <div style="display:grid;gap:2.5mm">
+    <p class="eyebrow">Kom igång</p>
+    <div class="steps">
+      <div><h3>Ett kort samtal</h3><p>Femton minuter om vad ni vill sälja mer av och vilka dagar som är lugna.</p></div>
+      <div><h3>Ett formulär</h3><p>Tio minuter om er meny, era gäster och er ton. Ni bjuder in oss som partner.</p></div>
+      <div><h3>Första leveransen</h3><p>Inom en vecka får ni luciaplanen och de första inläggen att godkänna.</p></div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <div><b>Vill ni prova inför lucia?</b><span>Svara på mejlet eller hör av er, så bokar vi ett kort samtal.</span></div>
+    <span class="mail">hej@fullthus.se</span>
+  </div>
+  <div class="foot"><span>Fullt Hus · marknadsföring för kaféer och restauranger</span><span>3 / 3</span></div>
+</section>
+</body>
+</html>

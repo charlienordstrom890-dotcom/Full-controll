@@ -1,0 +1,36 @@
+name: Publicera hemsidan
+
+# Lägger ut byra/hemsida/publicera/ på GitHub Pages (gratis).
+# Engångsinställning: Settings → Pages → Source: "GitHub Actions".
+on:
+  push:
+    paths:
+      - "byra/hemsida/**"
+      - ".github/workflows/hemsida.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publicera:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bygg sidan
+        run: python3 byra/hemsida/bygg.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: byra/hemsida/publicera
+      - id: deploy
+        uses: actions/deploy-pages@v4

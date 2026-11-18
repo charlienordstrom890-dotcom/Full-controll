@@ -20,7 +20,18 @@ Siffror som agenterna tillämpar mekaniskt. Justera efter din budget och dina ve
 | Returer/reklamationer | 8 % av pris exkl. moms |
 | EU-tull småpaket (< 150 €) | fast avgift per varupost sedan 1 juli 2026 ⚠️ kontrollera aktuellt belopp hos Tullverket |
 
-## Annonstest (Meta/TikTok)
+## Fas 1: organiskt (aktiv nu, annonsbudget 0 kr)
+| Regel | Värde |
+|---|---|
+| Produkter i test samtidigt | 3 (bara organiskt) |
+| Inlägg per produkt och vecka | minst 5 kortvideor (TikTok + Reels + Shorts, samma video) |
+| Döda produkt organiskt | 10 videor utan ett enda klick/fråga/köp → byt produkt |
+| Lovande produkt | ≥ 1 video med > 3× ditt snitt i visningar, eller ≥ 3 köp → beställ ett provexemplar och gör egen video |
+| Influencers | gratis produkt + 15 % provision, inget fast arvode; max 5 provexemplar i taget |
+| Provexemplar | max 500 kr/mån (det enda som kostar i fas 1) |
+| Gå till fas 2 | när ackumulerat bidrag ≥ 1 500 kr: 100 % av det läggs på annonstest enligt tabellen nedan |
+
+## Fas 2: annonstest (Meta/TikTok), aktiveras av fas 1
 | Regel | Värde |
 |---|---|
 | Testbudget per produkt | 150 kr/dag i 3–4 dagar |

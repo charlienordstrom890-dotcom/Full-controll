@@ -711,7 +711,7 @@ footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-betwe
 <footer class="site">
   <div class="wrap">
     <span>Fullt Hus · marknadsföring för restauranger och kaféer</span>
-    <span>hej@fullthus.se</span>
+    <span>fullthus.se@gmail.com</span>
   </div>
 </footer>
 
@@ -787,12 +787,12 @@ var OMDOMEN = [];
     if (endpoint) {
       fetch(endpoint, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
         .then(function (r) { if (!r.ok) throw new Error(); done(); })
-        .catch(function () { msg.textContent = 'Det gick inte att skicka. Mejla oss på hej@fullthus.se i stället.'; });
+        .catch(function () { msg.textContent = 'Det gick inte att skicka. Mejla oss på fullthus.se@gmail.com i stället.'; });
     } else {
       var body = 'Hej! Jag vill ha en gratis granskning.%0D%0A%0D%0A';
       data.forEach(function (v, k) { body += encodeURIComponent(k + ': ' + v) + '%0D%0A'; });
-      window.location.href = 'mailto:hej@fullthus.se?subject=' + encodeURIComponent('Gratis granskning: ' + data.get('namn')) + '&body=' + body;
-      msg.textContent = 'Ditt mejlprogram öppnas. Fungerar det inte, mejla oss på hej@fullthus.se.';
+      window.location.href = 'mailto:fullthus.se@gmail.com?subject=' + encodeURIComponent('Gratis granskning: ' + data.get('namn')) + '&body=' + body;
+      msg.textContent = 'Ditt mejlprogram öppnas. Fungerar det inte, mejla oss på fullthus.se@gmail.com.';
     }
   });
 })();

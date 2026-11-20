@@ -6,7 +6,7 @@ Resultat: byra/hemsida/publicera/index.html (det som GitHub Pages lägger ut).
 from pathlib import Path
 
 HERE = Path(__file__).parent
-KONTAKT_EPOST = "hej@fullthus.se"   # ändra här om adressen blir en annan
+KONTAKT_EPOST = "fullthus.se@gmail.com"   # ändra här om adressen blir en annan
 FORMULAR_URL = ""                   # t.ex. Formspree/Tally-endpoint; tomt = öppna e-post med förifylld text
 
 src = (HERE / "index.html").read_text(encoding="utf-8")

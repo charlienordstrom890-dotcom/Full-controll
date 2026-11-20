@@ -206,6 +206,13 @@ input[type=range] { width: 100%; accent-color: var(--accent); }
 @media (max-width: 520px) { .guarantee { grid-template-columns: 1fr; } }
 .price-note { margin-top: 18px; color: var(--muted); font-size: 0.92rem; max-width: 52em; }
 
+.pay { margin-top: 28px; border-top: 1px solid var(--line); padding-top: 24px; display: grid; gap: 14px; }
+.pay-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.pay-grid div { display: grid; gap: 4px; align-content: start; min-width: 0; }
+.pay-grid b { font-weight: 600; }
+.pay-grid span { color: var(--muted); font-size: 0.93rem; }
+@media (max-width: 760px) { .pay-grid { grid-template-columns: 1fr; } }
+
 /* Recensioner / pilot */
 .reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 @media (max-width: 920px) { .reviews { grid-template-columns: 1fr; } }
@@ -584,6 +591,14 @@ footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-betwe
         </div>
       </div>
       <p class="price-note">Ingen bindningstid, en månads uppsägning. Betalar ni för ett år får ni två månader gratis. Annonsbudgeten i Fullt hus betalar ni direkt till Meta, och ni bestämmer själva hur stor den är.</p>
+      <div class="pay" aria-labelledby="pay-h">
+        <h3 id="pay-h">Så betalar ni</h3>
+        <div class="pay-grid">
+          <div><b>Faktura</b><span>Varje månad i förskott, 30 dagar att betala. Ni betalar med vanlig banköverföring.</span></div>
+          <div><b>Kort</b><span>Automatisk dragning varje månad via Stripe. Kvitto skickas direkt till er mejl.</span></div>
+          <div><b>Inga dolda avgifter</b><span>Ingen startavgift. Priserna är exkl. moms och momsen får ni dra av som vanligt.</span></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -693,6 +708,7 @@ footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-betwe
         <details><summary>Lovar ni fler gäster?</summary><p>Nej, ingen ärlig byrå kan lova det. Vi lovar att ni syns regelbundet och syns bra, och varje månad visar vi hur många som hittat er via Google och sociala medier. Visar siffrorna inget kan ni säga upp med en månads varsel.</p></details>
         <details><summary>Varför finns det inga kundomdömen på sidan?</summary><p>För att vi är nya, och vi visar bara riktiga omdömen. Därför tar vi in fem pilotkunder som får ett lägre pris mot att de berättar ärligt hur det gick.</p></details>
         <details><summary>Hur fungerar garantin?</summary><p>Är ni inte nöjda efter första månaden säger ni till inom 30 dagar, så betalar ni ingenting för den månaden. Materialet vi har gjort får ni behålla.</p></details>
+        <details><summary>Hur betalar vi?</summary><p>Med faktura varje månad i förskott, 30 dagar att betala, eller med kort där beloppet dras automatiskt via Stripe. Ingen startavgift och ingen bindningstid. Priserna är exkl. moms.</p></details>
         <details><summary>Behöver ni våra lösenord?</summary><p>Nej. Ni bjuder in oss som partner i Meta Business och som ansvarig i Google-profilen. Ni har kvar full kontroll och kan ta bort oss när ni vill.</p></details>
         <details><summary>Vem tar bilderna?</summary><p>Era egna bilder och korta mobilklipp blir bäst, eftersom gästerna vill se den riktiga maten. Vi skickar en enkel lista över vad som ska fotas.</p></details>
         <details><summary>Vi har serveringstillstånd. Får ni marknadsföra drinkarna?</summary><p>Vi följer alkohollagens regler för reklam. I praktiken fokuserar vi på maten och upplevelsen och nämner drycken sakligt.</p></details>

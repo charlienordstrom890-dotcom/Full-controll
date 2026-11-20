@@ -19,7 +19,8 @@ export function stripeKlient(argv = process.argv) {
     console.error('Det här är en LIVE-nyckel. Lägg till --live om du verkligen vill ändra i ditt riktiga konto.');
     process.exit(1);
   }
-  return new Stripe(key);
+  // fetch-klienten respekterar NODE_USE_ENV_PROXY (behövs i Claudes molnmiljö), och fungerar som vanligt annars.
+  return new Stripe(key, { httpClient: Stripe.createFetchHttpClient() });
 }
 
 export async function hittaMoms(stripe) {

@@ -24,6 +24,16 @@ Hemsidan är statisk (GitHub Pages), så vi bygger ingen kassa på sidan. Kunden
    ```
 4. Testa betalning med testkortet `4242 4242 4242 4242`, valfritt framtida datum och CVC.
 
+## Testat 2026-11-20 (testläge, konto acct_1Ue0ErQOOKNWcmTD)
+- `setup.mjs`: moms 25 %, 3 produkter, 6 priser, kupong PILOT50. Andra körningen skapade inga dubbletter.
+- Faktura + pilot (Växa): 2 995 kr − 50 % = 1 497,50 + moms 374,38 = **1 871,88 kr**, förfaller efter 30 dagar.
+- Kort, år (Synas): 14 950 + moms 3 737,50 = **18 687,50 kr**. Betald med testkort, abonnemanget blev aktivt och kortet sparades för nästa år.
+
+I Claudes molnmiljö injiceras nyckeln av proxyn, så skripten körs med:
+```sh
+STRIPE_API_KEY=sk_test_proxyinjected NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt node setup.mjs
+```
+
 ## Inställningar i Dashboard (gör en gång, innan livekörning)
 
 Inställningar → **Fakturor**:

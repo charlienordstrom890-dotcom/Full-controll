@@ -1,5 +1,8 @@
 # Gratis granskning: Camilles Trädgård & Café, Vaxholm
 
+> **Kontrollerad 2026-11-21.** Inga fel. Nytt fynd och ny förbättring 1: guider (bl.a. Spinach.guide) länkar till camilles-tradgard-cafe.business.site, som ger 404. Googles gratis hemsidor stängdes 2024, så länken finns troligen kvar i Google-profilen. Byt ut den mot Instagram (@camilles.tradgard).
+
+
 Datum: 2026-11-18. Endast offentlig information. Företaget är inte kontaktat.
 
 **Identifiering:** Användaren skrev "Camillas garden och café". Den verksamhet som matchar är **Camilles Trädgård & Café** (Camille's Garden & Café), Fiskaregatan 12, 185 32 Vaxholm, tel 073-906 55 46. Trädgårdscafé i gamla Vaxholm. Källa: https://destinationvaxholm.se/en/camilles-tradgard-cafe

@@ -1,5 +1,8 @@
 # Gratis granskning: Märtas Kafé & Butik (Höllviken, Malmöområdet)
 
+> **Kontrollerad 2026-11-21 mot martaskafe.se.** Fel: "ingen meny" (menyn finns på sidan Kafé, men utan priser), "inget Instagram-konto" (de har @martaskafeochbutik med flöde på hemsidan) och "cateringen syns bara som en rad" (catering har en egen sida). Stämmer: en av e-postlänkarna går till info@martas,se, och stängt julafton och juldagen står på hemsidan. Förbättring 3–5 i PDF:en är omskrivna efter detta.
+
+
 Datum: 2026-11-18. Endast offentlig information. Företaget är inte kontaktat.
 
 ## Identifiering (BEKRÄFTA MED ANVÄNDAREN)

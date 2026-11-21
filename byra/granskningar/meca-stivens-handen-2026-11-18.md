@@ -1,5 +1,8 @@
 # Gratis marknadsföringsgranskning: Stiven Bilverkstad - Meca (Handen, Haninge)
 
+> **Kontrollerad 2026-11-21 mot stivenbilservice.se.** Alla påståenden stämde. Nytt fynd: överst på sidan står "mån–fre 08–18", längst ner även "lördag 10–16". Kunder kan tro att det är stängt på lördagar, så samma tider bör stå på båda ställena.
+
+
 Datum: 2026-11-18. Endast offentlig information. Företaget har inte kontaktats.
 
 ## Vilken verksamhet är det?

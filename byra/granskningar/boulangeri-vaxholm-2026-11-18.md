@@ -1,5 +1,8 @@
 # Gratis marknadsföringsgranskning: Boulangerie, Vaxholm
 
+> **Kontrollerad 2026-11-21 mot boulangerie.se.** Fel: påståendet att menyn inte finns som text (den finns på /meny/ med priser). Missvisande: "öppettiderna skiljer sig" gällde bara Wanderlog, inte deras egna sidor; hemsidan säger varje dag 07.30–17.30. Förbättring 2 är ändrad till att kontrollera att Google visar samma tider som hemsidan. Stämmer: förbeställning finns, inga lussebullar, inga sociala länkar, © 2023.
+
+
 Datum: 2026-11-18 | Granskare: Fullt Hus | Underlag: endast offentlig information (webbsökning). Företaget har inte kontaktats.
 
 ## Vilken verksamhet

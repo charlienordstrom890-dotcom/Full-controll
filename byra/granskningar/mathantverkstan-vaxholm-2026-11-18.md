@@ -1,5 +1,8 @@
 # Gratis granskning: Mathantverkstan i Skärgården, Vaxholm
 
+> **Kontrollerad 2026-11-21 mot ostmakeriet.se.** Fel: "öppettider saknas" och "tiderna gäller Ostmakeriets egen butik". Ostmakeriet.se visar under rubriken Mathantverkstan i Skärgården / Vaxholm: 3 april–13 juni och 16 augusti–20 december fre–lör 12–17, sommar alla dagar 12–17. Tveksamt: kopplingen till Waxholm Mathantverk (waxholmmathantverk.se är ett annat företag) – använd inte. Förbättringen om öppettider gäller nu att visa vintertiderna tydligt i Google-profilen.
+
+
 Datum: 2026-11-18. Byrå: Fullt Hus. Endast offentlig information; företaget är inte kontaktat.
 Google Maps och Instagram gick inte att läsa (Instagram gav HTTP 429, Google Maps ej åtkomligt). Allt som inte kunde verifieras är markerat "kunde inte verifieras – kolla manuellt".
 

@@ -1,0 +1,107 @@
+FULLT HUS OCH VILDPULS - ALLA KOMMANDON
+=======================================
+Skriv kommandona i Claude Code i projektet Full-controll.
+Allt inom <> byts mot ditt eget, till exempel ett namn eller en ort.
+Uppdaterad: 2026-11-21
+
+
+FULLT HUS (marknadsföringsbyrån)
+--------------------------------
+
+/byra salj 10
+    Hittar 10 lokala kaféer, bagerier eller restauranger som passar som kunder.
+    Lägg till en ort, till exempel: /byra salj 10 Vaxholm
+    Du väljer vilka som ska granskas. Sedan får du säljmejl med uppföljning
+    efter 3 och 7 dagar. Du skickar mejlen själv.
+
+/byra granskning <företag, ort>
+    Gratis granskning av ett företag: Google, hemsida, Instagram, recensioner,
+    5 förbättringar och ett färdigt mejl att skicka.
+    Exempel: /byra granskning Kafé Linden, Vaxholm
+    Kontrollera alltid företagets Google-profil själv innan du skickar.
+
+/byra ny-kund <namn>
+    Lägger upp en ny kund: kundprofil och en plan för 90 dagar.
+    Exempel: /byra ny-kund Boulangerie
+
+/byra manad <kund>
+    Gör en hel månads innehåll åt kunden: inlägg, Google-inlägg,
+    reels-manus och nyhetsbrev, kontrollerat mot reglerna.
+    Exempel: /byra manad boulangerie
+
+/byra rapport <kund>
+    Månadsrapport till kunden. Lägg siffror eller skärmdumpar i kundens
+    mapp först: byra/kunder/<kund>/leveranser/<månad>/data/
+    Exempel: /byra rapport boulangerie
+
+
+VILDPULS (dropshipping-butiken)
+-------------------------------
+
+/dropship-team setup
+    Butiksprofil, regler och butikens grundsidor.
+
+/dropship-team hitta-produkter
+    Hittar produkter, leverantörer, räknar vinst och kollar lagkrav.
+
+/dropship-team lansera <produkt>
+    Produktsida, annonsvinklar, videomanus, innehållsplan och mejlflöden.
+    Exempel: /dropship-team lansera kallbadskit
+
+/dropship-team veckocykel
+    Veckorapport, vad som ska stoppas eller satsas mer på, och nya kreativ.
+
+
+SAKER DU KAN SKRIVA MED VANLIGA ORD
+-----------------------------------
+
+"Gör en PDF av granskningen för <företag>"
+    En delbar PDF i Fullt Hus stil, som till Boulangerie och Märtas.
+
+"Lägg till <företag> som kund, <paket>, pilotpris, faktura, e-post <adress>"
+    Skapar kunden och abonnemanget i Stripe. Stripe mejlar fakturan.
+    Paket: Synas (1 495 kr), Växa (2 995 kr), Fullt hus (5 495 kr) per månad exkl. moms.
+    Lägg till "kort" i stället för "faktura" för kortbetalning,
+    och "år" för årsbetalning (2 månader gratis).
+
+"Gör två Instagram-inlägg för Fullt Hus"
+    Färdiga bilder och texter i samma stil som de första inläggen.
+
+"Uppdatera hemsidan med <ändring>"
+    Hemsidan uppdateras och läggs ut automatiskt.
+
+"Skriv kundavtalet"
+    Ett avtal på en sida inför första kunden.
+
+"Mejlen är klar"
+    Claude kontrollerar att mejlinställningarna för din domän är rätt.
+
+"Kontrollera granskningen av <företag>"
+    Varje påstående kontrolleras mot företagets egen hemsida.
+
+
+VIKTIGA LÄNKAR
+--------------
+
+Hemsidan:        https://charlienordstrom890-dotcom.github.io/Full-controll/
+Instagram:       https://www.instagram.com/fullthus.se/
+E-post:          fullthus.se@gmail.com
+To do-listan:    https://claude.ai/artifact/RZP1SvarjgQVtcZvw6pRej
+Kontrollen:      https://claude.ai/artifact/FPU2M4Zup84YBixoVre1h1
+Stripe (test):   https://dashboard.stripe.com/acct_1Ue0ErQOOKNWcmTD/test/dashboard
+GitHub-repot:    https://github.com/charlienordstrom890-dotcom/Full-controll
+
+
+VAR SAKER FINNS I PROJEKTET
+---------------------------
+
+byra/granskningar/         Alla granskningar
+byra/granskningar/pdf/     PDF:er att skicka till företag
+byra/hemsida/              Hemsidan
+byra/instagram/            Instagram-bilder och texter
+byra/varumarke/            Logga och profilbild
+byra/stripe/               Stripe-inställningar och skript
+byra/KOM-IGANG.md          Så kommer du igång med byrån
+byra/DOMAN-GUIDE.md        Så kopplar du en egen domän
+byra/MEJL-GOOGLE-WORKSPACE.md   Så skapar du mejl på egen domän
+butik/                     Allt om Vildpuls

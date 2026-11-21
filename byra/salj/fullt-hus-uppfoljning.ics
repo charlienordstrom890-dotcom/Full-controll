@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fullt Hus//Salj//SV
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:fullthus-salj-0@fullthus
+DTSTAMP:20261121T120000Z
+DTSTART:20261124T080500Z
+DTEND:20261124T083000Z
+SUMMARY:Skicka säljmejl till Boulangerie och Märtas
+DESCRIPTION:Mejlen och PDF:erna: byra/salj/mejl-2026-11-21.md. Boulangerie: info@boulangerie.se. Märtas: info@martas.se.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Skicka säljmejl till Boulangerie och Märtas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fullthus-salj-1@fullthus
+DTSTAMP:20261121T120000Z
+DTSTART:20261127T081500Z
+DTEND:20261127T083000Z
+SUMMARY:Uppföljning 1: Boulangerie och Märtas
+DESCRIPTION:Har de inte svarat? Svara i samma tråd: 'Hej igen! Ville bara se att mejlet kom fram. Hann ni titta på granskningen?'
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Uppföljning 1: Boulangerie och Märtas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fullthus-salj-2@fullthus
+DTSTAMP:20261121T120000Z
+DTSTART:20261201T081500Z
+DTEND:20261201T083000Z
+SUMMARY:Uppföljning 2 (sista): Boulangerie och Märtas
+DESCRIPTION:Har de inte svarat? Sista mejlet: 'Jag hör inte av mig mer efter det här...' Texten finns i byra/salj/mejl-2026-11-21.md.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Uppföljning 2 (sista): Boulangerie och Märtas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

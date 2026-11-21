@@ -17,6 +17,13 @@ Betygsätt 1–5 med en mening motivering:
 4. **Recensioner** — återkommande beröm och klagomål
 5. **Hittbarhet** — syns de på "[typ av mat] [ort]" och "lunch [ort]"?
 
+**Kontrollera innan du påstår ett fel** (en felaktig granskning förstör förtroendet direkt):
+- Påstå bara att något är fel eller saknas om du själv har öppnat sidan och sett det. Sökträffar och sammanställningssajter räcker inte.
+- Innan du skriver "saknas": sök på sajten (meny, sidfot, kategorier) efter julsida, presentkort, kampanjer, sociala länkar och öppettider.
+- Siffror i en tom varukorg eller ett laddningsläge ("Laddar…", "1 kr", "0 kr") är platshållare, inte riktiga avgifter.
+- Samma telefonnummer skrivet med olika mellanslag eller landsnummer är inte "olika nummer".
+- Kunde du inte kontrollera något: skriv det under "Kunde inte verifieras", aldrig som en förbättring.
+
 Avsluta med **5 förbättringar** sorterade efter effekt/insats, där minst 3 går att göra gratis på under 30 minuter. Skriv sedan ett kort, personligt mejl/DM (max 90 ord) som erbjuder granskningen — ingen säljpress.
 
 ## Kvalitets- och regelkontroll av innehåll

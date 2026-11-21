@@ -1,30 +1,37 @@
-# Butiksprofil
+# Fullt Hus: produkt- och marknadsföringsprofil
 
-Läses av alla agenter och marknadsföringsskills. Uppdatera när något ändras.
+Läses av marknadsföringsskills när Fullt Hus marknadsför sig självt. Kundernas profiler ligger i `byra/kunder/<kund>/profil.md`.
 
-## Butik
-- Namn / varumärke: **Vildpuls** (arbetsnamn). Alternativ: Fjällfart, Stigsprint, Toppglad, Trailtramp
-- Domän: vildpuls.se (såg ledig ut 2026-11-18 enligt DNS-kontroll, ej registrerad än). @-namn på TikTok/Instagram är inte kontrollerade.
-- Plattform: Shopify Starter (säljer via produktlänkar, länk-i-bio och sociala kanaler). Uppgradera till Basic när en produkt säljer stabilt.
-- Marknad: Sverige
-- Språk: svenska
+## Företaget
+- **Namn:** Fullt Hus (enskild firma, F-skatt och moms ansökt 2026-11-20)
+- **Hemsida:** https://charlienordstrom890-dotcom.github.io/Full-controll/ (egen domän köps senare)
+- **E-post:** fullthus.se@gmail.com · **Instagram:** @fullthus.se
+- **Löfte:** "Vi fyller era bord. Ni lagar maten."
 
-## Nisch och erbjudande
-- Nisch: träning & friluftsliv. Smarta, lätta prylar för vardagsäventyr: vandring, löpning i skog, camping, hemmaträning före och efter turen.
-- Varför den här nischen: passionerade köpare, mycket naturligt videoinnehåll (natur, före/efter-pass), lätta och tåliga produkter att frakta, säsongstoppar (vår och sommar för friluftsliv, januari för träning).
-- Kärnlöfte till kunden: "Prylar som gör att du kommer ut oftare och har roligare där ute."
+## Erbjudande
+Marknadsföring på abonnemang för restauranger, kaféer och bagerier som ägaren själv driver. Google-profil, recensioner, Instagram, Facebook, nyhetsbrev och lokala annonser. Kunden godkänner allt.
+
+| Paket | Pris/mån exkl. moms | Ingår |
+|---|---|---|
+| Synas | 1 495 kr | Google-profil varje vecka, svar på recensioner, 8 inlägg, rapport |
+| Växa | 2 995 kr | + 12 inlägg, 4 reels-manus, nyhetsbrev, säsongskampanj |
+| Fullt hus | 5 495 kr | + lokala Meta-annonser (kundens budget), kvartalsmöte |
+
+Ingen bindningstid, en månads uppsägning, årsbetalning ger 2 månader gratis, nöjd-garanti första månaden. Pilotkunder: halva priset i 3 månader. Betalning med faktura (30 dagar) eller kort via Stripe.
 
 ## Målgrupp
-- Primär kund: 20–45 år, aktiva eller "vill bli mer aktiva" i stad och förort, som vandrar, springer, campar eller tränar hemma på helgerna. Vill ha smarta, prisvärda lösningar, inte dyr premiumutrustning.
-- Sekundär: presentköpare (födelsedag, jul, fars dag) till någon som gillar att vara ute.
-- Var de finns: TikTok och Instagram Reels (#friluftsliv, #vandring, #hemmaträning), Facebook-grupper för vandring och löpning, YouTube Shorts.
-- Invändningar: lång leveranstid ("kommer det från Kina?"), "är detta en seriös butik?", kvalitet ("håller det på fjället?"), prisjämförelse med Temu/Amazon.
+- **Primär:** ägare till små kaféer, bagerier och lunchrestauranger, 1–3 enheter, inte kedjor. Står själva i köket, har ont om tid, har ofta gamla öppettider och obesvarade recensioner på Google.
+- **Var de finns:** på plats i sin verksamhet (bästa kontakten är ett besök en lugn eftermiddag 14–16), Instagram, lokala företagarnätverk.
+- **Invändningar:** "vi har inte tid", "det är för dyrt", "vi har provat byrå förut", "vi klarar Instagram själva".
 
-## Varumärkesröst
-- Ton: **äventyrlig och lekfull**. Ut och lev! Korta meningar, naturbilder i språket, lite självdistans, aldrig skrytig.
-- Vi använder: "ut", "tur", "äventyr", "stigen", "fika i skogen", du-tilltal, emoji sparsamt (🌲⛺🏃).
-- Vi undviker: "bäst i världen", överdrifter om hälsa/prestation, falsk brådska ("bara 2 kvar!"), medicinska påståenden, engelska buzzwords när det finns svenska ord.
+## Varför Fullt Hus
+- Gratis granskning med konkreta fynd som de kan fixa själva, så de ser värdet innan de köper.
+- Specialiserade på mat och kafé: svenska säsonger (lucia, semlor, påsk, julbord), alkohollagen, allergener.
+- Liten och lokal: samma person varje gång, svar inom en arbetsdag.
+- Inga lösenord, ingen bindningstid, ärliga rapporter.
 
-## Resurser
-- Annonsbudget första månaden: **0 kr**: bara organisk trafik (TikTok/Reels, mikroinfluencers mot provision, gratis Google-listningar). Vinst från de första försäljningarna återinvesteras i annonstest (se beslutsregler).
-- Timmar per vecka: **3–5 h**. Teamet förbereder, användaren godkänner, filmar/publicerar och svarar kunder.
+## Konkurrenter
+Stora byråer (dyra, bindningstid), frilansare utan system, kundens egen tid (gratis men blir inte gjort), verktyg som Wix och Canva (kräver att ägaren gör jobbet).
+
+## Ton
+Rak, varm och konkret. Svenska, du/ni-tilltal. Inga byråord, inga löften om fler gäster, inga påhittade siffror eller omdömen.

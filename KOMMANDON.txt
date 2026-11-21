@@ -1,5 +1,5 @@
-FULLT HUS OCH VILDPULS - ALLA KOMMANDON
-=======================================
+FULLT HUS - ALLA KOMMANDON
+==========================
 Skriv kommandona i Claude Code i projektet Full-controll.
 Allt inom <> byts mot ditt eget, till exempel ett namn eller en ort.
 Uppdaterad: 2026-11-21
@@ -33,23 +33,6 @@ FULLT HUS (marknadsföringsbyrån)
     Månadsrapport till kunden. Lägg siffror eller skärmdumpar i kundens
     mapp först: byra/kunder/<kund>/leveranser/<månad>/data/
     Exempel: /byra rapport boulangerie
-
-
-VILDPULS (dropshipping-butiken)
--------------------------------
-
-/dropship-team setup
-    Butiksprofil, regler och butikens grundsidor.
-
-/dropship-team hitta-produkter
-    Hittar produkter, leverantörer, räknar vinst och kollar lagkrav.
-
-/dropship-team lansera <produkt>
-    Produktsida, annonsvinklar, videomanus, innehållsplan och mejlflöden.
-    Exempel: /dropship-team lansera kallbadskit
-
-/dropship-team veckocykel
-    Veckorapport, vad som ska stoppas eller satsas mer på, och nya kreativ.
 
 
 SAKER DU KAN SKRIVA MED VANLIGA ORD
@@ -104,4 +87,3 @@ byra/stripe/               Stripe-inställningar och skript
 byra/KOM-IGANG.md          Så kommer du igång med byrån
 byra/DOMAN-GUIDE.md        Så kopplar du en egen domän
 byra/MEJL-GOOGLE-WORKSPACE.md   Så skapar du mejl på egen domän
-butik/                     Allt om Vildpuls

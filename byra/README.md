@@ -46,7 +46,7 @@ Team: `byra-strateg`, `byra-innehall`, `byra-granskare` (`.claude/agents/`), med
 20 kunder, snitt 2 500 kr = **50 000 kr/mån**. Kostnader cirka 1 000–2 000 kr/mån + din tid (cirka 40–60 h/mån för 20 kunder).
 
 ## Innan första kunden
-- [ ] Enskild firma med F-skatt (samma som för Vildpuls fungerar — lägg till verksamhetsbeskrivningen)
+- [ ] Enskild firma med F-skatt (ansökan skickad 2026-11-20)
 - [ ] Kundavtal: vad som ingår, godkännande, att kunden äger sitt material, uppsägning, ansvar
 - [ ] Personuppgiftsbiträdesavtal (för nyhetsbrevslistor och kunddata)
 - [ ] 2–3 första kunder till halva priset i 3 månader mot att få använda resultaten som kundcase

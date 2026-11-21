@@ -62,7 +62,7 @@ Vänta en timme → **Börja autentisera**.
 ```
 [Ditt namn]
 Fullt Hus · Marknadsföring för kaféer och restauranger
-hej@fullthusbyra.se · fullthus.se
+hej@fullthusbyra.se · fullthusbyra.se
 ```
 
 ## Steg 7: Claude kontrollerar

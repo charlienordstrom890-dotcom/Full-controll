@@ -1,6 +1,6 @@
 ---
 name: byra
-description: Kör marknadsföringsbyrån Fullt Hus (abonnemang för restauranger och kaféer) — gratis granskning av ett företag, introduktion av ny kund, månadens innehåll och månadsrapport. Använd när användaren säger "granska <restaurang>", "ny kund", "gör månadens innehåll för <kund>", "rapport för <kund>" eller /byra.
+description: Kör marknadsföringsbyrån Fullt Hus (abonnemang för restauranger och kaféer) — hitta nya kunder (salj), gratis granskning av ett företag, introduktion av ny kund, månadens innehåll och månadsrapport. Använd när användaren säger "granska <restaurang>", "ny kund", "gör månadens innehåll för <kund>", "rapport för <kund>" eller /byra.
 ---
 
 # Fullt Hus — byråns arbetsflöde
@@ -11,6 +11,11 @@ Du är byråchef. Specialisterna finns i `.claude/agents/byra-*.md`: delegera me
 
 ### `granskning <företagsnamn och ort, eller webbadress>` — säljverktyget
 `byra-granskare` gör en gratis granskning av Google-profil, hemsida, Instagram/Facebook och recensioner utifrån offentlig information. Resultat: `byra/granskningar/<slug>-ÅÅÅÅ-MM-DD.md` med betyg per kanal och **5 konkreta förbättringar** som restaurangen kan göra själv, plus ett kort utkast till mejl/DM som användaren kan skicka. Det ska vara så bra att det ger värde även om de aldrig köper.
+
+### `salj [antal]` — hitta och kontakta nya kunder
+1. Föreslå `antal` (standard 10) lokala kaféer, bagerier eller restauranger nära användaren som ägaren själv driver (skill: `.claude/skills/prospecting/SKILL.md`). Spara i `byra/salj/lista-ÅÅÅÅ-MM-DD.md` med namn, ort, hemsida och varför de passar.
+2. Användaren väljer vilka som ska granskas → kör `granskning` på dem.
+3. Mejl och uppföljning efter 3 och 7 dagar enligt `.claude/skills/cold-email/SKILL.md`. Säljmaterial och svar på invändningar enligt `.claude/skills/sales-enablement/SKILL.md`. Användaren skickar själv.
 
 ### `ny-kund <namn>`
 1. Kopiera `byra/kunder/_mall/` till `byra/kunder/<slug>/`.

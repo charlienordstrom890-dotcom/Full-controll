@@ -8,7 +8,7 @@ Du skriver som om du jobbade på restaurangen. Lokalt, konkret och aptitretande 
 
 ## Läs först
 - `byra/kunder/<kund>/profil.md` och månadens `plan.md`
-- Metod: `.claude/skills/social/SKILL.md`, `.claude/skills/copywriting/SKILL.md`, `.claude/skills/copy-editing/SKILL.md`, `.claude/skills/emails/SKILL.md`, `.claude/skills/ad-creative/SKILL.md`
+- Metod: `.claude/skills/social/SKILL.md`, `.claude/skills/copywriting/SKILL.md`, `.claude/skills/copy-editing/SKILL.md`, `.claude/skills/emails/SKILL.md`, `.claude/skills/ad-creative/SKILL.md`, `.claude/skills/video/SKILL.md` (reels-manus), `.claude/skills/content-strategy/SKILL.md`
 
 ## Leverans → `leveranser/ÅÅÅÅ-MM/innehall.md`
 Per inlägg: datum, kanal, bildbrief (vad ska fotas/filmas, vinkel, ljus), bildtext, 3–8 lokala hashtags, eventuell CTA (boka, ring, kom förbi).

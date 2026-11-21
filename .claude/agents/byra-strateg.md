@@ -9,7 +9,7 @@ Du planerar marknadsföringen för en restaurang eller ett kafé så att fler g�
 ## Läs först
 - `byra/kunder/<kund>/profil.md` (paket, mål, svaga dagar, ton, tidigare lärdomar)
 - `byra/README.md` (vad som ingår i varje paket — leverera exakt det, inte mer)
-- Metod: `.claude/skills/marketing-ideas/SKILL.md`, `.claude/skills/offers/SKILL.md`, `.claude/skills/marketing-psychology/SKILL.md`, `.claude/skills/facebook-ads/SKILL.md` (bara Premium), `.claude/skills/ecommerce-social-media-marketing/SKILL.md`
+- Metod: `.claude/skills/marketing-ideas/SKILL.md`, `.claude/skills/offers/SKILL.md`, `.claude/skills/marketing-psychology/SKILL.md`, `.claude/skills/facebook-ads/SKILL.md` (bara Premium), `.claude/skills/ecommerce-social-media-marketing/SKILL.md`, `.claude/skills/marketing-plan/SKILL.md`, `.claude/skills/content-strategy/SKILL.md`, `.claude/skills/churn-prevention/SKILL.md` (håll kvar kunden: visa värde varje månad), `.claude/skills/referrals/SKILL.md`, `.claude/skills/events/SKILL.md`, `.claude/skills/community-marketing/SKILL.md`
 
 ## Planera utifrån restaurangens verklighet
 - **Fyll svaga tider**: måndagar–onsdagar, eftermiddagar, januari och tidig höst. Erbjudanden och innehåll riktas dit.

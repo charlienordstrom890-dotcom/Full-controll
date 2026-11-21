@@ -1,21 +1,22 @@
-# fullthus.se: koppla domänen till hemsidan (cirka 15 minuter)
+# fullthusbyra.se: koppla domänen till hemsidan (cirka 20 min)
 
-Hemsidan ligger redan gratis på GitHub Pages. Här kopplar du din egen adress till den. Du behöver bara klicka och klistra in. Allt tekniskt står färdigt nedan.
+Domänen är köpt hos Loopia (utan DNS-paket). Vi styr den gratis via Cloudflare. Gör stegen i ordning och säg till Claude efter varje steg, så kontrollerar Claude att det har slagit igenom.
 
-## Steg 0: slå på GitHub Pages (1 min, gratis, görs en gång)
-1. Öppna https://github.com/charlienordstrom890-dotcom/Full-controll/settings/pages
-2. Under **Build and deployment → Source**: välj **GitHub Actions**. (Det sparas direkt.)
-3. Säg till Claude "Pages är på", så publiceras sidan. Den hamnar på https://charlienordstrom890-dotcom.github.io/Full-controll/
+## Steg 1: Cloudflare-konto (5 min, gratis)
+1. Gå till **dash.cloudflare.com/sign-up** och skapa konto med fullthus.se@gmail.com. Slå på tvåstegsverifiering.
+2. Välj **Add a domain** (Lägg till domän) → skriv `fullthusbyra.se` → välj **Free**-planen (0 kr).
+3. Cloudflare visar två **nameservers** (namnservrar), till exempel `anna.ns.cloudflare.com` och `bob.ns.cloudflare.com`. Låt fliken vara öppen.
 
-## Steg 1: köp domänen (5 min, cirka 100–250 kr)
-1. Gå till en svensk domänleverantör, till exempel **loopia.se** eller **one.com**.
-2. Sök på `fullthus.se` → lägg i varukorgen → **välj BARA domänen**, inget webbhotell, ingen hemsidebyggare och ingen e-post (det fixar vi gratis).
-3. Betala och bekräfta e-posten du får.
+## Steg 2: peka domänen till Cloudflare hos Loopia (5 min)
+1. Logga in på **Loopia Kundzon** (customerzone.loopia.se).
+2. Välj domänen `fullthusbyra.se` → **Ändra DNS-servrar / namnservrar** → välj att använda **egna/externa** namnservrar.
+3. Klistra in de två adresserna från Cloudflare och spara.
+4. Tillbaka i Cloudflare: tryck **Check nameservers**. Det kan ta från några minuter till några timmar innan Cloudflare säger "Active".
 
-## Steg 2: peka domänen mot hemsidan (5 min)
-Hos domänleverantören: leta upp **DNS** (heter ofta "DNS-inställningar" eller "Hantera DNS"). Ta bort befintliga **A**- och **AAAA**-poster för `@` (domänen utan www), och lägg sedan till:
+## Steg 3: lägg in hemsidan i Cloudflare (5 min)
+Cloudflare → `fullthusbyra.se` → **DNS → Records → Add record**. Ta först bort eventuella gamla A- eller CNAME-poster för `@` och `www`. Lägg sedan till dessa. Viktigt: ställ **Proxy status** på **DNS only** (grått moln) på alla.
 
-| Typ | Namn/värd | Värde |
+| Type | Name | Content |
 |---|---|---|
 | A | @ | 185.199.108.153 |
 | A | @ | 185.199.109.153 |
@@ -27,21 +28,12 @@ Hos domänleverantören: leta upp **DNS** (heter ofta "DNS-inställningar" eller
 | AAAA | @ | 2606:50c0:8003::153 |
 | CNAME | www | charlienordstrom890-dotcom.github.io |
 
-(Står det "lämna tomt" i stället för `@` hos din leverantör så lämnar du fältet tomt.)
-
-## Steg 3: tala om för GitHub vilken adress som gäller (2 min)
+## Steg 4: tala om för GitHub (2 min)
 1. Öppna https://github.com/charlienordstrom890-dotcom/Full-controll/settings/pages
-2. Under **Custom domain**: skriv `fullthus.se` → **Save**.
-3. Vänta tills kontrollen blir grön (allt från några minuter till några timmar), och kryssa sedan i **Enforce HTTPS**.
+2. **Custom domain:** skriv `fullthusbyra.se` → **Save**.
+3. När kontrollen blir grön (minuter till några timmar): kryssa i **Enforce HTTPS**.
 
-Klart: https://fullthus.se visar hemsidan.
+Klart: https://fullthusbyra.se visar hemsidan.
 
-## Steg 4: mejlen hej@fullthus.se (gratis, 10 min)
-1. Skapa ett konto på **zoho.com/mail** → välj gratisplanen ("Forever Free") → ange `fullthus.se`.
-2. Zoho visar ett antal poster (**TXT** för verifiering, **MX** och **SPF/DKIM**). Lägg in exakt dem i samma DNS-inställningar som i steg 2. Ta inte bort A- och CNAME-posterna du lagt in.
-3. Skapa adressen `hej@fullthus.se` och ladda ner Zoho Mail-appen på mobilen.
-
-När mejlen fungerar skickar formuläret på hemsidan förfrågningarna dit.
-
-## Fastnar du?
-Ta en skärmdump av DNS-sidan hos domänleverantören och skicka den till Claude, så säger Claude exakt vad som ska ändras.
+## Steg 5: mejl på domänen (senare)
+hej@fullthusbyra.se: gratis via Zoho Mail eller med Google Workspace. Posterna läggs in i samma DNS-lista i Cloudflare. Se `MEJL-GOOGLE-WORKSPACE.md` (byt fullthus.se mot fullthusbyra.se).

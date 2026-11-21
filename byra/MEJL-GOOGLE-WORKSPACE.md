@@ -1,6 +1,6 @@
-# Mejl med Google Workspace: hej@fullthus.se
+# Mejl med Google Workspace: hej@fullthusbyra.se
 
-Cirka 30 minuter. Kräver att du redan har köpt **fullthus.se**. Allt du ska skriva in står här.
+Cirka 30 minuter. Domänen **fullthusbyra.se** är köpt. DNS sköts i Cloudflare (se DOMAN-GUIDE.md). Allt du ska skriva in står här.
 
 **Kostnad:** Business Starter cirka 76,50 kr per användare och månad med årsavtal, eller cirka 91,70 kr per månad utan bindning (Googles prislista, november 2026). **Du behöver bara EN användare.** Övriga adresser blir gratis alias (se steg 4).
 
@@ -12,8 +12,8 @@ Du får: Gmail med din egen adress, Google Kalender med bokningssida för kundsa
 1. Gå till **workspace.google.com/intl/sv** → **Kom igång**.
 2. Företagsnamn: **Fullt Hus** · Antal anställda: **Bara du** · Land: **Sverige**.
 3. Dina uppgifter: ditt namn och din vanliga e-post (för återställning).
-4. "Har ditt företag en domän?" → **Ja** → skriv `fullthus.se`.
-5. Din användare: **[förnamn]@fullthus.se**, till exempel `charlie@fullthus.se`.
+4. "Har ditt företag en domän?" → **Ja** → skriv `fullthusbyra.se`.
+5. Din användare: **[förnamn]@fullthusbyra.se**, till exempel `charlie@fullthusbyra.se`.
 6. Välj **Business Starter**. Betala med kort. Det finns ofta 14 dagars gratis provperiod.
 
 ## Steg 2: verifiera domänen (5 min)
@@ -33,17 +33,17 @@ Ta **bort** eventuella gamla MX-poster hos domänleverantören och lägg till:
 |---|---|---|---|
 | MX | @ | `smtp.google.com` | 1 |
 | TXT | @ | `v=spf1 include:_spf.google.com ~all` | – |
-| TXT | _dmarc | `v=DMARC1; p=none; rua=mailto:hej@fullthus.se` | – |
+| TXT | _dmarc | `v=DMARC1; p=none; rua=mailto:hej@fullthusbyra.se` | – |
 
 Rör inte A- och CNAME-posterna för hemsidan (från DOMAN-GUIDE.md). De ska ligga kvar.
 
 ## Steg 4: gratis extra adresser (alias)
 Admin-konsolen (admin.google.com) → **Användare** → klicka på dig → **Lägg till alternativa e-postadresser**:
-- `hej@fullthus.se` (huvudadressen på hemsidan och i PDF:erna)
-- `faktura@fullthus.se` (Stripe och kvitton)
-- `info@fullthus.se` (folk gissar ofta på den)
+- `hej@fullthusbyra.se` (huvudadressen på hemsidan och i PDF:erna)
+- `faktura@fullthusbyra.se` (Stripe och kvitton)
+- `info@fullthusbyra.se` (folk gissar ofta på den)
 
-Allt kommer in i samma inkorg. Gmail → Inställningar → Konton → **Skicka e-post som**: lägg till `hej@fullthus.se`, så kan du välja avsändare.
+Allt kommer in i samma inkorg. Gmail → Inställningar → Konton → **Skicka e-post som**: lägg till `hej@fullthusbyra.se`, så kan du välja avsändare.
 
 ## Steg 5: DKIM, så att mejlen inte hamnar i skräpposten (5 min, gör 48 h efter steg 3)
 admin.google.com → **Appar → Google Workspace → Gmail → Autentisera e-post** → **Generera ny post** (2048 bitar) → Google visar en TXT-post:
@@ -62,7 +62,7 @@ Vänta en timme → **Börja autentisera**.
 ```
 [Ditt namn]
 Fullt Hus · Marknadsföring för kaféer och restauranger
-hej@fullthus.se · fullthus.se
+hej@fullthusbyra.se · fullthus.se
 ```
 
 ## Steg 7: Claude kontrollerar

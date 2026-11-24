@@ -2,7 +2,7 @@
 
 Marknadsföring på abonnemang för restauranger, kaféer och bagerier. Det här repot innehåller hemsidan, byråns AI-team i Claude Code, granskningar, PDF:er, Instagram-material och Stripe-uppsättningen.
 
-**Hemsida:** https://charlienordstrom890-dotcom.github.io/Full-controll/ (publiceras automatiskt från `byra/hemsida/`)
+**Hemsida:** https://fullthusbyra.se/ (publiceras automatiskt från `byra/hemsida/`)
 
 ## Kom igång
 Alla kommandon står i [`KOMMANDON.txt`](KOMMANDON.txt). De viktigaste:

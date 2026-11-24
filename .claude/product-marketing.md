@@ -4,7 +4,7 @@ Läses av marknadsföringsskills när Fullt Hus marknadsför sig självt. Kunder
 
 ## Företaget
 - **Namn:** Fullt Hus (enskild firma, F-skatt och moms ansökt 2026-11-20)
-- **Hemsida:** https://charlienordstrom890-dotcom.github.io/Full-controll/ (egen domän köps senare)
+- **Hemsida:** https://fullthusbyra.se/
 - **E-post:** fullthus.se@gmail.com · **Instagram:** @fullthus.se
 - **Löfte:** "Vi fyller era bord. Ni lagar maten."
 

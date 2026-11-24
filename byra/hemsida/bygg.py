@@ -7,6 +7,7 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 KONTAKT_EPOST = "fullthus.se@gmail.com"   # ändra här om adressen blir en annan
+WEBBADRESS = "https://fullthusbyra.se/"
 FORMULAR_URL = ""                   # t.ex. Formspree/Tally-endpoint; tomt = öppna e-post med förifylld text
 
 src = (HERE / "index.html").read_text(encoding="utf-8")
@@ -16,6 +17,11 @@ head = f"""<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="{WEBBADRESS}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{WEBBADRESS}">
+<meta property="og:site_name" content="Fullt Hus">
+<meta property="og:locale" content="sv_SE">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='12' cy='32' r='9' fill='%23C8322B'/%3E%3Ccircle cx='32' cy='32' r='9' fill='%23C8322B'/%3E%3Ccircle cx='52' cy='32' r='9' fill='%23C8322B'/%3E%3C/svg%3E">
 <style>:root{{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}}body{{margin:0}}img{{max-width:100%}}[hidden]{{display:none!important}}html{{scroll-behavior:smooth}}</style>
 """

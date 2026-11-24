@@ -14,7 +14,7 @@ facebook.com → Meny → **Sidor → Skapa ny sida** (inloggad med ditt eget Fa
 - **Omslagsbild:** `byra/facebook/Fullt-Hus-facebook-omslag-1640x624.png`
 
 ## 3. Kontakt och information (Redigera → Om)
-- **Webbplats:** `https://charlienordstrom890-dotcom.github.io/Full-controll/`
+- **Webbplats:** `https://fullthusbyra.se/`
 - **E-post:** `fullthus.se@gmail.com`
 - **Plats:** visa inte adress (du har inget kontor). Välj **Serviceområde**: Stockholm, Vaxholm, Haninge med flera.
 - **Öppettider:** "Alltid öppet" eller vardagar 08–17

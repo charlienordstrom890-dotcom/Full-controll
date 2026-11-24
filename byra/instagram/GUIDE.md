@@ -10,7 +10,7 @@
   Google-profil, recensioner och sociala medier för kaféer och restauranger.
   👇 Gratis granskning av ditt ställe
   ```
-- **Länk:** https://charlienordstrom890-dotcom.github.io/Full-controll/ (lägg till med "Lägg till länk", rubrik: Gratis granskning)
+- **Länk:** https://fullthusbyra.se/ (lägg till med "Lägg till länk", rubrik: Gratis granskning)
 - **Kontaktknappar:** Redigera profil → Kontaktalternativ → e-post fullthus.se@gmail.com
 - **Höjdpunkter:** lägg upp 4 storys med bilderna `hojdpunkt-*.png` och spara varje som höjdpunkt: Om oss, Tips, Paket, Gratis koll
 

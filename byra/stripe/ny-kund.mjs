@@ -19,15 +19,21 @@ if (a.help || !a.namn || !a.epost || !PAKET[a.paket] || !['faktura', 'kort'].inc
   process.exit(a.help ? 0 : 1);
 }
 
-const stripe = stripeKlient();
+const stripe = await stripeKlient();
 const moms = await hittaMoms(stripe);
 if (!moms) { console.error('Kör setup.mjs först.'); process.exit(1); }
 
 const pris = (await stripe.prices.list({ lookup_keys: [lookupKey(a.paket, a.ar ? 'ar' : 'manad')] })).data[0];
 if (!pris) { console.error('Hittar inte priset. Kör setup.mjs först.'); process.exit(1); }
 
+const MOMSNR = 'SE050726485101';
+const FAKTURA_SIDFOT = `Godkänd för F-skatt · Momsreg.nr ${MOMSNR} · Fullt Hus · fullthusbyra.se`;
+const vartMomsId = (await stripe.taxIds.list({ limit: 100 })).data.find(t => t.value === MOMSNR);
+if (!vartMomsId) { console.error('Momsnumret saknas i Stripe. Kör foretag.mjs först.'); process.exit(1); }
+
 const kund = await stripe.customers.create({
   name: a.namn, email: a.epost, preferred_locales: ['sv'],
+  invoice_settings: { footer: FAKTURA_SIDFOT },
   address: { country: 'SE' },
   metadata: { app: 'fullthus', ...(a.orgnr ? { orgnr: a.orgnr } : {}) },
   ...(a.momsnr ? { tax_id_data: [{ type: 'eu_vat', value: a.momsnr }] } : {}),
@@ -38,6 +44,7 @@ const sub = await stripe.subscriptions.create({
   customer: kund.id,
   items: [{ price: pris.id }],
   default_tax_rates: [moms.id],
+  invoice_settings: { account_tax_ids: [vartMomsId.id] },
   ...(a.pilot ? { discounts: [{ coupon: PILOT_KUPONG }] } : {}),
   collection_method: faktura ? 'send_invoice' : 'charge_automatically',
   ...(faktura ? { days_until_due: 30 } : {

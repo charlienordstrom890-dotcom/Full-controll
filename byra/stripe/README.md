@@ -34,8 +34,13 @@ I Claudes molnmiljö injiceras nyckeln av proxyn, så skripten körs med:
 STRIPE_API_KEY=sk_test_proxyinjected NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt node setup.mjs
 ```
 
+## Viktigt om nycklar i Claudes molnmiljö
+Proxyn lägger in den nyckel som är sparad för api.stripe.com, och det är **livenyckeln**. Texten i STRIPE_API_KEY (sk_test_… eller sk_live_…) styr alltså inte läget. Därför frågar `stripeKlient()` Stripe om läget och stoppar om det är live utan `--live`. Testkörningar kräver att en testnyckel sparas istället.
+
 ## Live sedan 2026-11-24
 `setup.mjs --live` kört i livekontot: moms 25 % (exkl.), Synas/Växa/Fullt hus per månad och år, kupong PILOT50. Betalningar och utbetalningar är aktiverade.
+
+Momsnummer och kundportal: `node foretag.mjs --live` (kört 2026-11-24, kundportalens inloggningslänk: https://billing.stripe.com/p/login/9B628ka9t4yP0Ibduf8Zq00).
 
 Kör nya kunder i live med:
 ```sh

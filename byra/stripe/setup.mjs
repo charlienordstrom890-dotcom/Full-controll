@@ -2,7 +2,7 @@
 //   STRIPE_API_KEY=sk_test_... node setup.mjs
 import { PAKET, PILOT_KUPONG, MOMS_META, stripeKlient, hittaMoms, lookupKey } from './lib.mjs';
 
-const stripe = stripeKlient();
+const stripe = await stripeKlient();
 
 // 1. Moms 25 % (manuell skattesats, gratis; Stripe Tax behövs inte för svensk B2B-moms)
 let moms = await hittaMoms(stripe);

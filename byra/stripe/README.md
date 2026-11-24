@@ -34,6 +34,14 @@ I Claudes molnmiljö injiceras nyckeln av proxyn, så skripten körs med:
 STRIPE_API_KEY=sk_test_proxyinjected NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt node setup.mjs
 ```
 
+## Live sedan 2026-11-24
+`setup.mjs --live` kört i livekontot: moms 25 % (exkl.), Synas/Växa/Fullt hus per månad och år, kupong PILOT50. Betalningar och utbetalningar är aktiverade.
+
+Kör nya kunder i live med:
+```sh
+STRIPE_API_KEY=sk_live_proxyinjected NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt node ny-kund.mjs ... --live
+```
+
 ## Inställningar i Dashboard (gör en gång, innan livekörning)
 
 Inställningar → **Fakturor**:
